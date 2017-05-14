@@ -1,0 +1,31 @@
+Urls of my api - 
+
+base url - http://ec2-52-77-247-196.ap-southeast-1.compute.amazonaws.com:3000/api/blogs
+
+Resources - 
+
+1) GET /all 		- this is used to get all blogs - array of objects
+
+2) GET /:blogId 	- this is used to get the info of a particular blog. blogId is the variable - 						object
+
+3) POST /create		 - create a blog ,
+						Input required - heading, subHeading, author, bodyHtml
+						output - object of created blog
+
+
+4) PUT /:blogId/edit - edit a blog, 
+						Input required - heading, subHeading, author, bodyHtml
+						output - object of updated blog
+
+
+5) POST /:blogID/remove - remove a blog 
+							output - number
+
+
+
+When ever you are giving input to the API, there are 3 most famous ways - 
+
+1) Query parameter - the data followed by ?
+2) URL parameter  - the data in the url 
+
+3) Body parameters - you send it in HTTP post or put request - form data

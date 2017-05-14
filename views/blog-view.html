@@ -1,0 +1,29 @@
+<div class="row" ng-init="singleBlog.loadSingleBlog()">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <h1>{{singleBlog.blog.heading}}</h1>
+
+                <div class="post-preview">
+                    <p>
+                        
+                        {{singleBlog.blog.bodyHtml}}
+
+                    </p>
+                    <p class="post-meta">Posted by <a href="#">{{singleBlog.blog.author}}</a> on {{singleBlog.blog.created | date:'medium'}}</p>
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Back to Home &rarr;</a>
+                    </li>
+                    
+                    <li >
+                        <a ng-click="singleBlog.delete($index)">Delete</a>
+                    </li>
+                </ul>
+            </div>
+</div>
