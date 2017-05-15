@@ -5,8 +5,8 @@ myApp.controller('mainController',['$http','BlogService',function($http,BlogServ
   var main = this;
 
 
-  this.pageHeading = 'edWisor Blog';
-  this.pageSubHeading = 'A collection of experience by students, alumni and edWisor.com team'
+  this.pageHeading = 'My Angular Blog';
+  this.pageSubHeading = 'A sample blog application made in AngularJS';
   
   // i knew the result is going to be array, so i declared an empty array to initialize
   this.blogs = [];
@@ -42,7 +42,7 @@ myApp.controller('mainController',['$http','BlogService',function($http,BlogServ
   this.deleteBlog=function(blogId,index){
 
     BlogService.deleteBlog(blogId)
-    
+
     .then(function successCallback(response){
       
       main.blogs.splice(index,1);

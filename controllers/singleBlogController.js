@@ -23,7 +23,7 @@ myApp.controller('singleBlogController',['$http','$routeParams','BlogService',fu
       .then(function successCallback(response) {
           // this callback will be called asynchronously
           // when the response is available
-          //console.log(response);
+          console.log(response);
           main.blog = response.data.data;
           console.log(main.blog);
 
